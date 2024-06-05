@@ -1,5 +1,5 @@
-import messages from './messages.js';
-
+import messages from "./convs/demo/messages.js"; // IMPORTANT change this line to match the name of your convs folder
+const conv_path = "./convs/demo/"; // IMPORTANT change this line to match the name of your. End this in trailing slash
 
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
@@ -42,7 +42,7 @@ async function writeImage(image, role) {
     chatBlob.className = "bot-class message";
     messageContainer.appendChild(chatBlob);
 
-    chatBlob.innerHTML = "<img src=" + image + ">";
+    chatBlob.innerHTML = "<img src=" + conv_path + image + ">";
     chatBlob.scrollIntoView();
     await sleep(waitingUnit * 20);
 }
