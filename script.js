@@ -1,5 +1,5 @@
-import messages from "./convs/demo/messages.js"; // IMPORTANT change this line to match the name of your convs folder
-const conv_path = "./convs/demo/"; // IMPORTANT change this line to match the name of your. End this in trailing slash
+import messages from "./convs/pv-agent/messages.js"; // IMPORTANT change this line to match the name of your convs folder
+const conv_path = "./convs/pv-agent/"; // IMPORTANT change this line to match the name of your. End this in trailing slash
 
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
